@@ -50,7 +50,7 @@ function start(){
       let directionY= (forceDirectionY*force*this.density);
 
       if(distance<mouse.r + this.size){
-        this.x -= directionX;    this.y-= directionY
+        this.x += directionX;    this.y-= directionY
       } else {
         if (this.x != this.bX){
           this.x -= (this.x - this.bX)/20;
